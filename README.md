@@ -63,6 +63,6 @@ The graph-based parser is in the `graph` folder. You can run it by `python spa-g
 - *-loadname*, the name of model to load from. [default `<none>`]
 - *-loadckpt*, the check point of the model to load from. [default `-1`]
 
-###Transition-Based Parser
+### Transition-Based Parser
 
 `TO-DO`
