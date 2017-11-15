@@ -4,9 +4,9 @@ Please cite the following paper (to appear) if you use our source code:
 
 ```
 @inproceedings{spa-dp:18,
-	author = {Yi Zhou, Junying Zhou, Lu Liu, Haoyuan Peng and Xiaoqing Zheng},
+	author = {Zhou, Yi and Zhou, Junying and Liu, Lu and Peng, Haoyuan and Zheng, Xiaoqing},
 	title = {RNN-based Sequence-Preserved Attention for Dependency Parsing},
-	booktitle = {AAAI Conference on Artificial Intelligence},
+	booktitle = {AAAI},
 	year = {2018}
 }
 ```
