@@ -71,7 +71,7 @@ The transition-based parser is in the `transition` folder. You can run it by `py
 - *-dev* , the name of dev file. [default `sample`]
 - *-test* , the name of test file. [default `sample`]
 - *-beam* , the size of beam in beam search. [default `1`]
-  ## only support beam=1 at the current version
+  > only support beam=1 at the current version
 - *-hidden* , the size of the rnn hidden. [default `300`]
 - *-word* , the size of the word embeddings. [default `50`] 
 - *-pos* , the size of the pos embeddings. [default `10`] 
