@@ -65,4 +65,27 @@ The graph-based parser is in the `graph` folder. You can run it by `python spa-g
 
 ### Transition-Based Parser
 
-`TO-DO`
+The transition-based parser is in the `transition` folder. You can run it by `python spa_transition.py` with the following args:
+
+- *-train* , the name of train file. [default `sample`]
+- *-dev* , the name of dev file. [default `sample`]
+- *-test* , the name of test file. [default `sample`]
+- *-beam* , the size of beam in beam search. [default `1`]
+  > only support beam=1 at the current version
+- *-hidden* , the size of the rnn hidden. [default `300`]
+- *-word* , the size of the word embeddings. [default `50`] 
+- *-pos* , the size of the pos embeddings. [default `10`] 
+- *-cell* , the type of rnn cell. [default `LTSM`] 
+- *-scan* , the scan mode of the attention LSTM. [default `ab2n`]
+  - `ab2n` : the one we refer to as  **BoT-SPA** in the paper.
+  - `b` : not using an sequence-preserved attention LSTM.
+- *-bi_rnn_dropout* , the dropout of the first bi-rnn in the model. [default `0.5`]
+- *-bi_rnn_num_layers* , the layer number of the first bi-rnn in the model. [default `2`]
+- *-batch* , the batch size. [default `4`]
+- *-loadmodel* , the name of model to load from. [default `model`]
+- *-loadckpt* , the check point of the model to load from. [default `1`]
+- *-gpu* , the gpu id when the cuda is available. [default `0`]
+- *-maxepoch* , the total times when the train file will be trained. [default `40`]
+- *-valid* , whether the model is directly test without being trained. [default `False`]
+- *-name* , the name of the model. [default `model`]
+- *-lr* , the learning rate. [default `0.001`]
